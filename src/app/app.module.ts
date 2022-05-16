@@ -1,9 +1,9 @@
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import {AppComponent} from './app.component';
+import { AppComponent } from './app.component';
 
-import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LogoComponent } from './logo/logo.component';
 import { NavComponent } from './nav/nav.component';
 import { AvatarComponent } from './avatar/avatar.component';
@@ -12,7 +12,6 @@ import { PlayButtonComponent } from './play-button/play-button.component';
 import { MoreInfoButtonComponent } from './more-info-button/more-info-button.component';
 import { HeroContentComponent } from './hero-content/hero-content.component';
 import { DivContentComponent } from './div-content/div-content.component';
-import { HeroImageComponent } from './hero-image/hero-image.component';
 import { NewBadgeComponent } from './new-badge/new-badge.component';
 import { ShowImageComponent } from './show-image/show-image.component';
 
@@ -27,15 +26,11 @@ import { ShowImageComponent } from './show-image/show-image.component';
     MoreInfoButtonComponent,
     HeroContentComponent,
     DivContentComponent,
-    HeroImageComponent,
     NewBadgeComponent,
-    ShowImageComponent
+    ShowImageComponent,
   ],
-  imports: [
-    BrowserModule,
-    FontAwesomeModule
-  ],
+  imports: [BrowserModule, FontAwesomeModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-show-image',
   templateUrl: './show-image.component.html',
-  styleUrls: ['./show-image.component.css']
+  styleUrls: ['./show-image.component.css'],
 })
-export class ShowImageComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class ShowImageComponent {
+  @Input() image!: string;
+  @Input() label!: string;
+  @Input() newBadge?: string;
+  @Input() progress?: string;
 }
