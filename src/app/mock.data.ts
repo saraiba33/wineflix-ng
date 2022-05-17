@@ -1,4 +1,6 @@
-const heroContent = {
+import { HERO, WINES } from './data-template';
+
+export const heroContent: HERO = {
   title: 'Rex Goliath',
   subtitle: 'His Royal Majesty is back.',
   imageUrl: '/assets/rex-goliath-logo.png',
@@ -6,10 +8,10 @@ const heroContent = {
   as hell.  Experience the unapologetic flavor burst of Rex Goliath.`,
 };
 
-const wines = [
+export const wines: WINES[] = [
   {
     id: 1,
-    imageUrl: '/assets/assets/red-wine.jpg',
+    imageUrl: '/assets/red-wine.jpg',
     isNew: true,
     label: 'Wine',
     isFinished: true,
