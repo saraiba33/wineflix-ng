@@ -1,1 +1,15 @@
-<p>categories works!</p>
+<section class="category">
+    <h2>Drink Again</h2>
+    <ul>
+        <li *ngFor="let wine of finishedWines">
+            <app-wine-class [image]="wine.imageUrl" [label]="wine.label" [isNew]="wine.isNew">
+            </app-wine-class>
+        </li>
+    </ul>
+</section>
+<section class="category">
+    <h2>Keep Drinking</h2>
+    <ul>
+        <li *ngFor="let wine of inProgressWine">
+            <app-drink-again [image]="wine.imageUrl" [label]="wine.label" [progress]="wine.progress"></app-drink-again>
+        </li>

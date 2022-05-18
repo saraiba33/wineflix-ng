@@ -12,7 +12,4 @@ export class AppComponent {
   faPlay = faPlay;
   faInfoCircle = faInfoCircle;
   title = 'angular-template';
-  wines: WINES[] = wines;
-  finishedWines = wines.filter((wine) => wine.isFinished);
-  inProgressWine = wines.filter((wine) => wine.progress);
 }
