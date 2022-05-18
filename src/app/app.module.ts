@@ -9,9 +9,11 @@ import { HeroContentComponent } from './hero-content/hero-content.component';
 import { ControlButtonsComponent } from './control-buttons/control-buttons.component';
 import { HeroComponent } from './hero/hero.component';
 import { WineClassComponent } from './wine-class/wine-class.component';
+import { DrinkAgainComponent } from './drink-again/drink-again.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroContentComponent, ControlButtonsComponent, HeroComponent, WineClassComponent],
+  declarations: [AppComponent, HeaderComponent, HeroContentComponent, ControlButtonsComponent, HeroComponent, WineClassComponent, DrinkAgainComponent, CategoriesComponent],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

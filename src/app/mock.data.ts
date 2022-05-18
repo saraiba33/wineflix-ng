@@ -63,19 +63,19 @@ export const wines: WINES[] = [
   {
     id: 1,
     imageUrl: '/assets/red-wine.jpg',
-    progress: 22,
+    progress: 10,
     label: 'Wine',
   },
   {
     id: 2,
     imageUrl: '/assets/red-wine.jpg',
-    progress: 22,
+    progress: 40,
     label: 'Wine',
   },
   {
     id: 3,
     imageUrl: '/assets/red-wine.jpg',
-    progress: 22,
+    progress: 30,
     label: 'Wine',
   },
   {
@@ -87,25 +87,25 @@ export const wines: WINES[] = [
   {
     id: 5,
     imageUrl: '/assets/red-wine.jpg',
-    progress: 22,
+    progress: 75,
     label: 'Wine',
   },
   {
     id: 6,
     imageUrl: '/assets/red-wine.jpg',
-    progress: 22,
+    progress: 30,
     label: 'Wine',
   },
   {
     id: 7,
     imageUrl: '/assets/red-wine.jpg',
-    progress: 22,
+    progress: 15,
     label: 'Wine',
   },
   {
     id: 8,
     imageUrl: '/assets/red-wine.jpg',
-    progress: 22,
+    progress: 50,
     label: 'Wine',
   },
 ];

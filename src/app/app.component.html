@@ -7,115 +7,17 @@
         <section class="category">
             <h2>Drink Again</h2>
             <ul>
-                <li>
-                    <div class="wine" [image]: "" [badge]; "">
-                    </div>
-                </li>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                    </div>
-                </li>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                        <span class="new-badge">New!</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                    </div>
-                </li>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                        <span class="new-badge">New!</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                    </div>
-                </li>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                    </div>
-                </li>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                    </div>
+                <li *ngFor="let wine of finishedWines">
+                    <app-wine-class [image]="wine.imageUrl" [label]="wine.label" [isNew]="wine.isNew">
+                    </app-wine-class>
                 </li>
             </ul>
         </section>
         <section class="category">
             <h2>Keep Drinking</h2>
             <ul>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                        <div class="amount-consumed">
-                            <progress min="0" max="100" value="22"></progress>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                        <div class="amount-consumed">
-                            <progress min="0" max="100" value="22"></progress>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                        <div class="amount-consumed">
-                            <progress min="0" max="100" value="22"></progress>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                        <div class="amount-consumed">
-                            <progress min="0" max="100" value="22"></progress>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                        <div class="amount-consumed">
-                            <progress min="0" max="100" value="22"></progress>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                        <div class="amount-consumed">
-                            <progress min="0" max="100" value="22"></progress>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                        <div class="amount-consumed">
-                            <progress min="0" max="100" value="22"></progress>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="wine">
-                        <img src="/assets/red-wine.jpg" alt="Wine" />
-                        <div class="amount-consumed">
-                            <progress min="0" max="100" value="22"></progress>
-                        </div>
-                    </div>
+                <li *ngFor="let wine of inProgressWine">
+                    <app-drink-again [image]="wine.imageUrl" [label]="wine.label" [progress]="wine.progress"></app-drink-again>
                 </li>
             </ul>
         </section>
