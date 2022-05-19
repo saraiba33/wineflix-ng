@@ -1,6 +1,6 @@
 # WineFlix
 
-[](https://fabulous-bavarois-d5b097.netlify.app/)
+My [site](https://fabulous-bavarois-d5b097.netlify.app/)
 
 ![Wineflix demo](./wineflix.jpg)
 
